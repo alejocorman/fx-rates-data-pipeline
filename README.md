@@ -135,7 +135,8 @@ checks end-to-end.
 - dbt
 - pytest
 
-
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 # FX Rates Data Pipeline – Airflow, dbt & GCP
 
 Proyecto personal de ingeniería de datos donde diseño y ejecuto un pipeline
