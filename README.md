@@ -10,8 +10,7 @@ Frankfurter API → GCS (raw JSON) → BigQuery External Tables → dbt models
 Raw data is stored immutably in Google Cloud Storage and materialized as
 partitioned tables in BigQuery using dbt.
 
-For a detailed explanation of design decisions, see
-[docs/architecture.md](docs/architecture.md).
+<img width="885" height="528" alt="architecture" src="https://github.com/user-attachments/assets/91392e52-b96c-40f7-b06e-4052c058f5dd" />
 
 ## Ingestion
 
