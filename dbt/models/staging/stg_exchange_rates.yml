@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_exchange_rates
+    description: >
+      Exchange rates normalized to one row per date and target currency.
+      This model standardizes data types and prepares the dataset
+      for analytical consumption.
+    columns:
+      - name: rate_date
+        tests:
+          - not_null
+
+      - name: base_currency
+        tests:
+          - not_null
+
+      - name: target_currency
+        tests:
+          - not_null
+
+      - name: exchange_rate
+        tests:
+          - not_null
+
+      - name: ingestion_date
+        tests:
+          - not_null
+      
+      - name: ingested_at
+        tests:
+          - not_null

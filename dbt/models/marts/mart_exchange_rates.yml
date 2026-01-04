@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: mart_exchange_rates
+    description: Exchange rates ready for analytical consumption.
+    columns:
+      - name: rate_date
+        tests:
+          - not_null
+
+      - name: base_currency
+        tests:
+          - not_null
+
+      - name: target_currency
+        tests:
+          - not_null
+
+      - name: exchange_rate
+        tests:
+          - not_null
+
+      - name: is_latest
+        tests:
+          - not_null

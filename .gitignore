@@ -1,0 +1,46 @@
+# Airflow
+logs/
+plugins/__pycache__/
+dags/__pycache__/
+config/airflow.db
+config/airflow-webserver.pid
+config/airflow.cfg
+*.pid
+*.db
+
+# Docker
+.env
+*.env
+docker-compose.override.yml
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+venv/
+.env/
+.envrc
+.venv/
+pip-wheel-metadata/
+
+# Editores
+.vscode/
+.idea/
+.DS_Store
+
+# Data
+data/
+*.csv
+*.parquet
+*.json
+*.xlsx
+
+docs/
+credentials/
+
+# dbt local user config
+dbt/.user.yml

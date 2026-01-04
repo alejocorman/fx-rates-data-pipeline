@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: exchange_rates
+    description: >
+      Raw exchange rates materialized as a physical table from
+      an external table backed by GCS JSON files.
+
+    columns:
+      - name: rate_date
+        description: Date the exchange rates correspond to.
+        tests:
+          - not_null
+
+      - name: amount
+        description: Base amount returned by the API.
+        tests:
+          - not_null
+
+      - name: base
+        description: Base currency code.
+        tests:
+          - not_null
+
+      - name: rates
+        description: >
+          JSON object containing exchange rates by currency code.
+        tests:
+          - not_null
+
+      - name: ingestion_date
+        description: Date when the data was ingested into BigQuery.
+
+      - name: _ingested_at
+        description: UTC timestamp when the row was materialized by dbt.

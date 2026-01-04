@@ -1,0 +1,9 @@
+version: 1
+
+sources:
+  - name: raw
+    description: Includes external tables reading raw data from GCS
+    tables:
+      - name: exchange_rates_gcs
+        description: >
+          External table pointing to raw Frankfurter API JSON files in GCS.
